@@ -253,7 +253,7 @@ html{
 }
 }
 body{
-	color:#565678;
+	color:#000;
 	font-size:1rem
 }
 body,button,input,select,textarea{
@@ -1316,7 +1316,7 @@ button,input,select,textarea,label{
 }
 .newsletter{
 	position:relative;
-	background-color:#11103E
+	background-color:#000
 }
 .newsletter::before{
 	content:'';
@@ -1378,7 +1378,8 @@ main{
 	line-height:20px;
 	letter-spacing:0px;
 	color:#ABABC9;
-	background-color:#11103E
+	background: rgb(0,0,0);
+	background: linear-gradient(159deg, rgba(0,0,0,1) 74%, rgba(189,86,241,1) 98%);
 }
 .site-footer::before{
 	content:'';
@@ -1407,7 +1408,7 @@ main{
 	padding-bottom:48px
 }
 .site-footer-inner.has-top-divider::before{
-	background:#565678;
+	background:#000;
 	background:linear-gradient(to right, rgba(86,86,120,0.1) 0, rgba(86,86,120,0.6) 50%, rgba(86,86,120,0.1) 100%)
 }
 .footer-brand,.footer-links,.footer-social-links,.footer-copyright{
