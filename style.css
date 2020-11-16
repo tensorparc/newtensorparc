@@ -2,11 +2,11 @@ html{
 	line-height:1.15;
 	-ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%;
- 
 }
+
 body{
     margin:0;
-    color: #fff;
+	color: #fff;
 }
 
 
@@ -169,7 +169,7 @@ html{
 body{
 	background:#fff;
 	-moz-osx-font-smoothing:grayscale;
-	-webkit-font-smoothing:antialiased
+	-webkit-font-smoothing:antialiased;
 }
 hr{
 	border:0;
@@ -254,7 +254,7 @@ html{
 }
 body{
 	color:#000;
-	font-size:1rem
+	font-size:1rem;
 }
 body,button,input,select,textarea{
 	font-family:"Heebo", sans-serif
@@ -1344,14 +1344,15 @@ button,input,select,textarea,label{
 }
 }
 .is-boxed{
-	background:#EEF1FA
+	background:#000;
 }
 .body-wrap{
 	background:#000;
 	overflow:hidden;
 	display:flex;
 	flex-direction:column;
-	min-height:100vh
+	min-height:100vh;
+}
 }
 .boxed-container{
 	max-width:1440px;
@@ -1379,7 +1380,6 @@ main{
 	letter-spacing:0px;
 	color:#ABABC9;
 	background: rgb(0,0,0);
-	background: linear-gradient(159deg, rgba(0,0,0,1) 74%, rgba(189,86,241,1) 98%);
 }
 .site-footer::before{
 	content:'';
@@ -1449,9 +1449,6 @@ main{
 }
 
 
-
-
-
 span {
     display: block;
     position: absolute;
@@ -1462,14 +1459,14 @@ span {
   }
   
   span.spin {
-    animation: spin 10s linear infinite;
+	animation: spin 9s linear infinite;
   }
   
   span.spin-reverse {
     animation:  linear infinite;
-    margin-top: 4em;
-    margin-left: 2em;
-    margin-right: 1em;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     z-index: 1;
   }
 
@@ -1482,7 +1479,7 @@ span {
   }
 
   span.pulse {
-    animation: spin-pulse 20s linear infinite;
+    animation: spin-pulse 30s linear infinite;
   }
   
   @keyframes spin {
@@ -1490,7 +1487,7 @@ span {
       transform: rotateZ(0);
     }
     100% {
-      transform: rotateZ(360deg);
+      transform: rotateZ(-360deg);
     }
   }
   
@@ -1499,7 +1496,7 @@ span {
       transform: scale(1) rotateZ(0);
     }
     50% {
-      transform: scale(0.9) rotateZ(180deg);
+      transform: scale(0.9) rotateZ(90deg);
     }
     100% {
       transform: scale(1) rotateZ(360deg);
@@ -1507,25 +1504,26 @@ span {
   }
   
   .circle {
-    border-radius: 50%;
+    border-radius: 0%;
     left: calc(50% - 6.25em);
-    top: calc(50% - 12.5em);
-    transform-origin: 50% 12.5em;
+    top: calc(50% - 2.5em);
+	transform-origin: 50% 2.5em;
+	z-index: -1;
   }
   
   .squircle {
-    border-radius: 25%;
+	border-radius: 25%;
   }
   
   .circle, .squircle {
-    width: 12.5em;
-    height: 12.5em;
+    width: 2.5em;
+    height: 2.5em;
     position: absolute;
-    border-top: 0.1em solid rgba(255,255,255,0.4);
+	border-top: 0.1em solid rgba(255,255,255,0.4);
   }
   
   .large.circle {
-    box-shadow: 0 1em 2em rgba(0,0,0,0.5);
+   
   }
   
   .small {
@@ -1534,40 +1532,49 @@ span {
     left: calc(50% - 2em);
     top: calc(50% - 15em);
     transform-origin: 50% 15em;
-    box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.2);
+	box-shadow: 0 0.25em 0.5em rgba(189,86,241,1);
   }
   
   .one {
     background: rgba(16, 63, 236, transparent);
-    transform: rotateZ(225deg);
+	transform: rotateZ(225deg);
+	box-shadow: 0 0.25em 0.5em rgba(189,86,241,1);
   }
   .two {
     background: rgba(37, 172, 162, transparent);
-    transform: rotateZ(180deg);
+	transform: rotateZ(180deg);
+	box-shadow: 0 0.25em 0.5em rgba(189,86,241,1);
   }
   .three {
     background: rgba(233, 124, 32, transparent);
-    transform: rotateZ(135deg);
+	transform: rotateZ(135deg);
+	box-shadow: 0 0.25em 0.5em rgba(189,86,241,1);
   }
   .four {
     background: rgba(235, 67, 35, transparent);
-    transform: rotateZ(90deg);
+	transform: rotateZ(90deg);
+	box-shadow: 0 0.25em 0.5em rgba(189,86,241,1);
   }
   .five {
     background: rgba(190, 28, 65, transparent);
-    transform: rotateZ(45deg);
+	transform: rotateZ(45deg);
+	box-shadow: 0 0.25em 0.5em rgba(189,86,241,1);
   }
   .six {
     background: rgba(208, 57, 159, transparent);
-    transform: rotateZ(0);
+	transform: rotateZ(0);
+	box-shadow: 0 0.25em 0.5em rgba(189,86,241,1);
+	
   }
   .seven {
     background: rgba(150, 32, 198, transparent);
-    transform: rotateZ(-45deg);
+	transform: rotateZ(-45deg);
+	box-shadow: 0 0.25em 0.5em rgba(189,86,241,1);
   }
   .eight {
     background: rgba(95, 33, 203, transparent);
-    transform: rotateZ(-90deg);
+	transform: rotateZ(-90deg);
+	box-shadow: 0 0.25em 0.5em rgba(189,86,241,1);
   }
   
   .small.squircle {
