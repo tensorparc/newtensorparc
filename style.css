@@ -816,6 +816,7 @@ button,input,select,textarea,label{
 .sr .has-animations .is-revealing{
 	visibility:hidden
 }
+
 .has-animations .anime-element{
 	visibility:hidden
 }
@@ -1460,6 +1461,8 @@ span {
   
   span.spin {
 	animation: spin 9s linear infinite;
+	transform: translateX(250%);
+	direction: 'alternate';
   }
   
   span.spin-reverse {
